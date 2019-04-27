@@ -1,9 +1,9 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require 'capybara/minitest'
-require './app/controllers/personal_site'
+require './app/controllers/rack_site'
 
-Capybara.app = PersonalSite
+Capybara.app = RackSite
 
 class CapybaraTestCase < Minitest::Test
   include Capybara::DSL
